@@ -3,9 +3,12 @@ class DashboardPage {
     cy.visit("https://admin-demo.nopcommerce.com/Admin/Product/List");
   }
 
-  typeProductName(productName) {
-    cy.get("[id=SearchProductName]").type(productName);
-    return this;
+  navigateToCategores() {
+	  cy.visit("https://admin-demo.nopcommerce.com/Admin/Category/List")
+  }
+
+  navigateToManufacturers() {
+	  cy.visit("https://admin-demo.nopcommerce.com/Admin/Manufacturer/List")
   }
 }
 
