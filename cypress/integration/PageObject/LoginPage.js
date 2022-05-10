@@ -18,5 +18,11 @@ class LoginPage {
   submit() {
     cy.get("[type=submit]").click();
   }
+
+  loginWithCredentials(Email, Password) {
+    this.enterEmail();
+    this.enterPassword();
+    this.submit;
+  }
 }
 export default LoginPage;
