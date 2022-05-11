@@ -1,16 +1,16 @@
 import CategoriesPage from "./PageObject/CategoriesPgae";
-import DashboardPage from "./PageObject/DashboardPage";
+import NavigationPage from "./PageObject/NavigationPage";
 import LoginPage from "./PageObject/LoginPage";
 import ManufacturersPage from "./PageObject/ManufacturersPage";
 import ProductsPage from "./PageObject/ProductsPage";
 
 const login = new LoginPage();
-const dashboardPageNavigation = new DashboardPage();
+const dashboardPageNavigation = new NavigationPage();
 const productsPage = new ProductsPage();
 const categoriesPage = new CategoriesPage();
 const manufacturersPage = new ManufacturersPage();
 
-describe("login to application", () => {
+describe(" beforeEach: login to application", () => {
   beforeEach(() => {
     login.navigate();
     login.enterEmail("admin@yourstore.com");

@@ -37,12 +37,26 @@ class ProductsPage {
     return this;
   }
 
-  clickSearch(){
-	  cy.get("[id=search-products]").click()
+  clickSearch() {
+    cy.get("[id=search-products]").click();
   }
 
   verifyNoSearchResults() {
-	  cy.get("[class=dataTables_empty]").should("have.text", "No data available in table")
+    cy.get("[class=dataTables_empty]").should(
+      "have.text",
+      "No data available in table"
+    );
+  }
+
+  toggleSearchBox(boolean) {
+    const hiddenData = cy.get(
+      "[data-hideattribute=ProductListPage.HideSearchBlock]"
+    );
+    if (hiddenData === true) {
+      cy.get("[class=icon-collapse]").click();
+    } else {
+      console.log("search is avalable");
+    }
   }
 }
 export default ProductsPage;

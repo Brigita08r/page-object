@@ -1,4 +1,4 @@
-class DashboardPage {
+class NavigationPage {
   navigateToProducts() {
     cy.visit("https://admin-demo.nopcommerce.com/Admin/Product/List");
   }
@@ -10,6 +10,16 @@ class DashboardPage {
   navigateToManufacturers() {
 	  cy.visit("https://admin-demo.nopcommerce.com/Admin/Manufacturer/List")
   }
+
+  navigateToProductReviews() {
+	  cy.visit("https://admin-demo.nopcommerce.com/Admin/ProductReview/List")
+  }
+
+  navigateToProductTags() {
+	  cy.visit("https://admin-demo.nopcommerce.com/Admin/Product/ProductTags")
+  }
+
+  
 }
 
-export default DashboardPage;
+export default NavigationPage;

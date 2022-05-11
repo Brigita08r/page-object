@@ -25,9 +25,17 @@ class ProductReviewsPage {
     cy.get("[id=search-productreviews]").click();
   }
 
+  //combine to one  method of possible selection for 3 statuses
   selectProductReview(productReview) {}
   appproveProductReviews(selectedProductReview) {
     cy.get("[id=approve-selected]").click();
+  }
+
+  disapproveProductReviews(productReview){
+  }
+
+  deleteSelected(){
+
   }
 
   selectAndAppove() {
