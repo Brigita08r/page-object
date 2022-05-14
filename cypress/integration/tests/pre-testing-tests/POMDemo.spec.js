@@ -1,8 +1,8 @@
-import CategoriesPage from "./PageObject/CategoriesPgae";
-import NavigationPage from "./PageObject/NavigationPage";
-import LoginPage from "./PageObject/LoginPage";
-import ManufacturersPage from "./PageObject/ManufacturersPage";
-import ProductsPage from "./PageObject/ProductsPage";
+import CategoriesPage from "../../PageObject/1-Catalog/CategoriesPage";
+import NavigationPage from "../../PageObject/BasicActions/NavigationPage";
+import LoginPage from "../../PageObject/BasicActions/LoginPage";
+import ManufacturersPage from "../../PageObject/1-Catalog/ManufacturersPage";
+import ProductsPage from "../../PageObject/1-Catalog/ProductsPage";
 
 const login = new LoginPage();
 const dashboardPageNavigation = new NavigationPage();
@@ -24,7 +24,7 @@ describe(" beforeEach: login to application", () => {
     productsPage.enterProductName("PC");
     productsPage.selectCategory(1);
     productsPage.clickSearch();
-    productsPage.verifyNoSearchResults();
+    productsPage.verifyNoSedlarchResults();
   });
 
   it("Search for category in category page", function () {
@@ -35,7 +35,8 @@ describe(" beforeEach: login to application", () => {
   });
 
   it("Edit manufacture number 1", function () {
-      dashboardPageNavigation.navigateToManufacturers();
-      manufacturersPage.editManufacture(2);
-    });
+    dashboardPageNavigation.navigateToManufacturers();
+    manufacturersPage.editManufacture(2);
+  });
+  
 });

@@ -19,7 +19,9 @@ class NavigationPage {
 	  cy.visit("https://admin-demo.nopcommerce.com/Admin/Product/ProductTags")
   }
 
-  
+  navigateToOrders() {
+	  cy.visit("https://admin-demo.nopcommerce.com/Admin/Order/List")
+  }
 }
 
 export default NavigationPage;
