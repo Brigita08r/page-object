@@ -22,6 +22,10 @@ class NavigationPage {
   navigateToOrders() {
 	  cy.visit("https://admin-demo.nopcommerce.com/Admin/Order/List")
   }
+
+  navigateToVendors() {
+    cy.visit("https://admin-demo.nopcommerce.com/Admin/Vendor/List")
+  }
 }
 
 export default NavigationPage;

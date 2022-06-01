@@ -1,11 +1,22 @@
 {
   "name": "page-object",
   "version": "1.0.0",
-  "description": "",
+  "description": "ok, trying out this cypress thing one more time",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brigita08r/page-object.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Brigita08r/page-object/issues"
+  },
+  "homepage": "https://github.com/Brigita08r/page-object#readme",
+  "devDependencies": {
+    "cypress": "^9.7.0"
+  }
 }
