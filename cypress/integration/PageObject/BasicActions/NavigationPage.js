@@ -1,30 +1,58 @@
 class NavigationPage {
-  navigateToProducts() {
+  navigateToProductsInCatalog() {
     cy.visit("https://admin-demo.nopcommerce.com/Admin/Product/List");
   }
 
-  navigateToCategores() {
-	  cy.visit("https://admin-demo.nopcommerce.com/Admin/Category/List")
+  navigateToCategoriesInCatalog() {
+    cy.visit("https://admin-demo.nopcommerce.com/Admin/Category/List");
   }
 
-  navigateToManufacturers() {
-	  cy.visit("https://admin-demo.nopcommerce.com/Admin/Manufacturer/List")
+  navigateToManufacturersInCatalog() {
+    cy.visit("https://admin-demo.nopcommerce.com/Admin/Manufacturer/List");
   }
 
-  navigateToProductReviews() {
-	  cy.visit("https://admin-demo.nopcommerce.com/Admin/ProductReview/List")
+  navigateToProductReviewsInCatalog() {
+    cy.visit("https://admin-demo.nopcommerce.com/Admin/ProductReview/List");
   }
 
-  navigateToProductTags() {
-	  cy.visit("https://admin-demo.nopcommerce.com/Admin/Product/ProductTags")
+  navigateToProductTagsInCatalog() {
+    cy.visit("https://admin-demo.nopcommerce.com/Admin/Product/ProductTags");
   }
 
-  navigateToOrders() {
-	  cy.visit("https://admin-demo.nopcommerce.com/Admin/Order/List")
+  navigateToOrdersInSales() {
+    cy.visit("https://admin-demo.nopcommerce.com/Admin/Order/List");
   }
 
-  navigateToVendors() {
-    cy.visit("https://admin-demo.nopcommerce.com/Admin/Vendor/List")
+  navigateToVendorsInCutomers() {
+    cy.visit("https://admin-demo.nopcommerce.com/Admin/Vendor/List");
+  }
+
+  navigateToNewsletterSubscriptionsInPromotions() {
+    cy.visit(
+      "https://admin-demo.nopcommerce.com/Admin/NewsLetterSubscription/List"
+    );
+  }
+
+  navigateToNewsCommentInContentManagement() {
+    cy.visit("https://admin-demo.nopcommerce.com/Admin/News/NewsComments");
+  }
+
+  navigateToCountriesInConfiguration() {
+    cy.visit("https://admin-demo.nopcommerce.com/Admin/Country/List");
+  }
+
+  navigateToSystemInfoInSystem() {
+    cy.visit("https://admin-demo.nopcommerce.com/Admin/Common/SystemInfo");
+  }
+
+  navigateToLowStockInReports() {
+    cy.visit("https://admin-demo.nopcommerce.com/Admin/Report/LowStock");
+  }
+
+  navigateToDocumentationInHelp() {
+    cy.visit(
+      "https://docs.nopcommerce.com/en/index.html?utm_source=admin-panel&utm_medium=menu&utm_campaign=documentation&utm_content=help"
+    );
   }
 }
 
