@@ -15,9 +15,17 @@ describe(" beforeEach: login to application", () => {
     cy.url().should("be.equal", "https://admin-demo.nopcommerce.com/admin/");
   });
 
-  it("Search in for vendor in vendors page", function () {
-    dashboardPageNavigation.navigateToVendors();
+  it("Search in for vendor in vendors page by name", function () {
+    dashboardPageNavigation.navigateToVendorsInCutomers();
     vendorsPage.typeSearchName("Vendor 1");
     vendorsPage.clickSearch();
+    vendorsPage.verifySearchedResultIsPresentByName("Vendor 1");
+  });
+
+  it("Search in for vendor in vendors page by email", function () {
+    dashboardPageNavigation.navigateToVendorsInCutomers();
+    vendorsPage.typeSearchEmail("vendor2email@gmail.com");
+    vendorsPage.clickSearch();
+    vendorsPage.verifySearchedResultIsPresentByEmail("vendor2email@gmail.com");
   });
 });
