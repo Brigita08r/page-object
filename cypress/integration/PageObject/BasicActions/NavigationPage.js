@@ -27,9 +27,9 @@ class NavigationPage {
     cy.visit("https://admin-demo.nopcommerce.com/Admin/Vendor/List");
   }
 
-  navigateToNewsletterSubscriptionsInPromotions() {
+  navigateToDiscountsInPromotions() {
     cy.visit(
-      "https://admin-demo.nopcommerce.com/Admin/NewsLetterSubscription/List"
+      "https://admin-demo.nopcommerce.com/Admin/Discount/List"
     );
   }
 

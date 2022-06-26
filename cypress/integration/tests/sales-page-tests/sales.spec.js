@@ -16,13 +16,13 @@ describe(" beforeEach: login to application", () => {
   });
 
   it("Search for order in pending status", function () {
-    dashboardPageNavigation.navigateToOrders();
+    dashboardPageNavigation.navigateToOrdersInSales();
     ordersPage.selectOrderStatus(10);
   });
 
-    it("Fill in orders page and click search from common actions", function () {
-      dashboardPageNavigation.navigateToOrders();
-      ordersPage.enterBillingEmailAddress("victoria_victoria@nopCommerce.com");
-      ordersPage.clickSearchAfterFormFillIn();
-    });
+  it("Fill in orders page and click search from common actions", function () {
+    dashboardPageNavigation.navigateToOrdersInSales();
+    ordersPage.enterBillingEmailAddress("victoria_victoria@nopCommerce.com");
+    ordersPage.clickSearchAfterFormFillIn();
+  });
 });
